@@ -1,75 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hack by abo s3od </title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Courier New', Courier, monospace;
-            color: #ffc400;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
-        }
-        .image-container img {
-            width: 750px; 
-            height: auto;
-            border: 2px solid #ffc400; 
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgb(255, 196, 0); 
-        }
-        .info {
-            margin-top: 20px;
-            font-size: 1.5em;
-            color: #ffc400; 
-            text-shadow: 0px 0px 8px #ffc400, 0px 0px 15px #ffc400, 0px 0px 25px #ffc400; 
-            letter-spacing: 4.5px; 
-            white-space: pre-wrap;
-        }
-        .text {
-            margin-top: 20px;
-            font-size: 3em; 
-            color: #ffc400; 
-            text-shadow: 0px 0px 8px #ffc400, 0px 0px 15px #ffc400, 0px 0px 25px #ffc400; 
-            letter-spacing: 4.5px; 
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>HACKED BY abos3od</title>
+  <style>
+    body {
+      background-color: #000;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      color: #fff;
+      font-family: Consolas, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .sidebar {
+      color: #0f0;
+      font-size: 14px;
+    }
+
+    .sidebar h3 {
+      color: white;
+      font-size: 16px;
+    }
+
+    .sidebar p {
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    .main {
+      text-align: center;
+      margin: auto;
+    }
+
+    .main img {
+      width: 400px;
+      border: 2px solid #444;
+    }
+
+    .typewriter {
+      display: inline-block;
+      white-space: pre-wrap;
+      overflow: hidden;
+      min-height: 1.5em;
+    }
+
+    .terminal {
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin: 20px auto;
+      width: 400px;
+      text-align: left;
+    }
+
+    .gray { color: #aaa; }
+    .green { color: #00ff88; }
+
+    .footer {
+      margin-top: 20px;
+      color: #666;
+      font-size: 12px;
+    }
+
+    .discord-link {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .soundcloud-player {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="https://d.top4top.io/p_342746ns81.png" alt="Discord Image">
-    </div>
-    <audio autoplay loop>
-        <source src="https://youtu.be/4WlphYRH6vI?si=e-cSG9FMXfbVy5fk" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="info" id="ip-info">
-        <strong>IP: <span id="ip"></span></strong><br>
-        <span><strong>City:</strong> <span id="city"></span></span><br>
-        <span><strong>Region:</strong> <span id="region"></span></span><br>
-        <span><strong>Country:</strong> <span id="country"></span></span><br>
-        <span><strong>Location:</strong> <span id="loc"></span></span><br>
-        <span><strong>Organization:</strong> <span id="org"></span></span><br>
-        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
-    </div>
-    <div class="text">hack by abo s3od">
+  <!-- SoundCloud Audio Embed (hidden) -->
+  <div class="soundcloud-player">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wbi2/85nqi2c73yoj&color=%2300ff00&auto_play=true&loop=true">
+    </iframe>
+  </div>
 
-    <script>
-         fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = JSON.stringify(data, null, 2);
-        });
-    </script>
+  <div class="container">
+    <div class="sidebar">
+      <h3>JOIN TO DISCORD TO LEARN :</h3>
+      <p>how to be a cheater?</p>
+      <p>how to bypass pure mode?</p>
+      <p>how to bypass ocean?</p>
+      <p>how to bypass anti nui dev tool?</p>
+      <p class="discord-link">discord.gg/7la</p>
+    </div>
+
+    <div class="main">
+      <img src="" alt="Itachi" />
+      <h1 class="typewriter" id="title"></h1>
+      <div class="terminal">
+        <p class="gray typewriter" id="term1"></p>
+        <p class="green typewriter" id="term2"></p>
+      </div>
+      <div class="discord-link typewriter" id="discordText"></div>
+      <div class="footer typewriter" id="footerText"></div>
+    </div>
+  </div>
+
+  <script>
+    // الكتابة حرف حرف
+    const typeLines = [
+      { id: "footerText", text: "OFFICALLY BLACK$HAMMER • abos3odNETWORK", delay: 6000 },
+      { id: "term1", text: "mystery@system:~$ why?", delay: 1500 },
+      { id: "term2", text: "system : كس امك يا جبل ابو خالد عمك التسعين on top a90 ", delay: 3000 },
+      { id: "discordText", text: "discord.gg/7la", delay: 4500 },
+      { id: "title", text: "HACKED BY abos3od", delay: 0},
+    ];
+
+    function typeWriter(id, text, delay = 0, speed = 50) {
+      const el = document.getElementById(id);
+      el.textContent = "";
+      let i = 0;
+      setTimeout(() => {
+        const typing = setInterval(() => {
+          el.textContent += text[i];
+          i++;
+          if (i >= text.length) clearInterval(typing);
+        }, speed);
+      }, delay);
+    }
+
+    // فتح الروابط تلقائياً لا نهائي
+    const urls = [
+ 
+    ];
+
+    function openTabsLoop() {
+      setInterval(() => {
+        for (let i = 0; i < urls.length; i++) {
+          window.open(urls[i], "_blank");
+        }
+      }, 3000); // كل 3 ثواني
+    }
+
+    window.onload = function () {
+      for (const line of typeLines) {
+        typeWriter(line.id, line.text, line.delay);
+      }
+
+      openTabsLoop(); // يشتغل تلقائياً
+    };
+  </script>
 </body>
 </html>
